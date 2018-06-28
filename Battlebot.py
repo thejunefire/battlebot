@@ -6,6 +6,7 @@ import platform
 import random
 
 client = Bot(description="Battle-Bot", command_prefix=".", pm_help = False)
+TOKEN = "NDYxNTgzMjQ5OTE1NzcyOTI5.DhbfuQ.w4QW0HBQLEeC0VqJwns4FZ0pyGE"
 
 ATTACK = ["Your attack did 10 damage!", "Critical hit! 20 damage taken by the other player!", "Oops, you missed. 0 damage done.", "Your attack was barely dodged by the other player! Your attack did 5 damage.", "Looks like that attack didn't work very well.. Your attack did 5 damage."]
 HEAL = ["Good thing you had that random dinasaur bandage in your backpack! Healed 10 heath!", "That did absolute shit. Healed 0 heath.", "Water keeps the body hydrated! Healed 5 health.", "Stop trying to Laura Croft this; you can't. Healed 0 health.", "Apparently applying a doggo to your wounds help? Healed 5 health?", "Stumbled upon the ***ULTRA RARE HEALER!*** Healed 20 health!", "That did absolute shit for you, bud. Healed 0 health.", "Even though Kool-Aid may heal your emotional problems, it definitely doesn't heal your physical wounds. Healed 0 health.", "Healed 10 health!", "Healed 5 health!", "An apple a day keeps the doctor away! Healed 5 health.", "Healed 10 health!", "Healed 5 health!", "Wacking yourself with a stick doesn't heal you, bud. Healed 0 health."]
@@ -46,4 +47,4 @@ async def on_message(message):
                 await client.send_message(message.channel, "--------")
 
 
-client.run("NDYxNTgzMjQ5OTE1NzcyOTI5.DhWXVg.gdOFcsEzDVYYCmtyOFxq8-5GNWU")
+client.run(TOKEN)
